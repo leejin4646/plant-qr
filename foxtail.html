@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>강아지풀</title>
+<style>
+body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
+.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
+img { width: 100%; border-radius: 10px; }
+button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
+.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+</style>
+<script>
+function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
+</script>
+</head>
+<body>
+<div class="card">
+<h1>강아지풀</h1>
+<img src="images/foxtail.jpg" alt="강아지풀">
+<p>꼬리처럼 생긴 꽃이 특징, 여름 들판에서 흔히 볼 수 있음</p>
+<h3>퀴즈 1</h3>
+<p>강아지풀 꽃은 무엇을 닮았을까요?</p>
+<p>① 강아지 꼬리 ② 고양이 발 ③ 새 깃털</p>
+<button onclick="toggleAnswer('a1')">정답 보기</button>
+<p id="a1" class="answer">정답: ① 강아지 꼬리</p>
+<h3>퀴즈 2</h3>
+<p>강아지풀은 주로 어디서 자랄까요?</p>
+<p>① 사막 ② 들판 ③ 바다</p>
+<button onclick="toggleAnswer('a2')">정답 보기</button>
+<p id="a2" class="answer">정답: ② 들판</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>바오밥나무</title>
+<style>
+body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
+.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
+img { width: 100%; border-radius: 10px; }
+button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
+.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+</style>
+<script>
+function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
+</script>
+</head>
+<body>
+<div class="card">
+<h1>바오밥나무</h1>
+<img src="images/baobab.jpg" alt="바오밥나무">
+<p>몸통이 크고 물을 저장, 아프리카의 대표적인 나무</p>
+<h3>퀴즈 1</h3>
+<p>바오밥나무는 어디서 살까요?</p>
+<p>① 사막 ② 북극</p>
+<button onclick="toggleAnswer('a1')">정답 보기</button>
+<p id="a1" class="answer">정답: ① 사막</p>
+<h3>퀴즈 2</h3>
+<p>몸통이 큰 이유는?</p>
+<p>① 물 저장 ② 멋있어서</p>
+<button onclick="toggleAnswer('a2')">정답 보기</button>
+<p id="a2" class="answer">정답: ① 물 저장</p>
+</div>
+</body>
+</html>
+

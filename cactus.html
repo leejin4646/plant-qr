@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>선인장</title>
+<style>
+body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
+.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
+img { width: 100%; border-radius: 10px; }
+button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
+.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+</style>
+<script>
+function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
+</script>
+</head>
+<body>
+<div class="card">
+<h1>선인장</h1>
+<img src="images/cactus.jpg" alt="선인장">
+<p>가시가 잎을 대신하고 줄기에 물을 저장</p>
+<h3>퀴즈 1</h3>
+<p>선인장의 가시는 무엇을 대신하나요?</p>
+<p>① 꽃 ② 잎</p>
+<button onclick="toggleAnswer('a1')">정답 보기</button>
+<p id="a1" class="answer">정답: ② 잎</p>
+<h3>퀴즈 2</h3>
+<p>선인장은 어디서 잘 살까요?</p>
+<p>① 사막 ② 바다</p>
+<button onclick="toggleAnswer('a2')">정답 보기</button>
+<p id="a2" class="answer">정답: ① 사막</p>
+</div>
+</body>
+</html>
+

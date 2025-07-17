@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>연꽃</title>
+<style>
+body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
+.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
+img { width: 100%; border-radius: 10px; }
+button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
+.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+</style>
+<script>
+function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
+</script>
+</head>
+<body>
+<div class="card">
+<h1>연꽃</h1>
+<img src="images/lotus.jpg" alt="연꽃">
+<p>잎은 물 위에 뜨고, 여름에 큰 분홍꽃이 핌</p>
+<h3>퀴즈 1</h3>
+<p>연꽃 잎 위 물방울은 어떻게 될까요?</p>
+<p>① 스며든다 ② 굴러 떨어진다</p>
+<button onclick="toggleAnswer('a1')">정답 보기</button>
+<p id="a1" class="answer">정답: ② 굴러 떨어진다</p>
+<h3>퀴즈 2</h3>
+<p>연꽃은 어디서 살까요?</p>
+<p>① 물속 ② 사막 ③ 숲속</p>
+<button onclick="toggleAnswer('a2')">정답 보기</button>
+<p id="a2" class="answer">정답: ① 물속</p>
+</div>
+</body>
+</html>

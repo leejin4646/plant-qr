@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>식물 탐험 활동</title>
+<style>
+    body { font-family: 'Arial', sans-serif; text-align: center; background: #f8fff8; margin: 0; }
+    header { background: #4CAF50; color: white; padding: 20px; font-size: 1.8em; }
+    nav { background: #81C784; padding: 10px; }
+    nav a { margin: 10px; text-decoration: none; color: white; font-weight: bold; }
+    .plant-card { border: 2px solid #ddd; border-radius: 15px; background: #fff; padding: 15px; margin: 20px auto; max-width: 500px; }
+    img { width: 100%; border-radius: 10px; }
+    h2 { color: #388E3C; }
+    .quiz { margin-top: 10px; }
+    button { background: #4CAF50; color: white; border: none; padding: 10px; margin-top: 5px; border-radius: 8px; cursor: pointer; }
+    button:hover { background: #388E3C; }
+    .answer { display: none; margin-top: 5px; color: #E65100; font-weight: bold; }
+</style>
+<script>
+function toggleAnswer(id) {
+    var ans = document.getElementById(id);
+    ans.style.display = (ans.style.display === "none") ? "block" : "none";
+}
+</script>
+</head>
+<body>
+
+<header>🌱 식물 탐험 활동 🌱</header>
+<nav>
+    <a href="#mountain">들이나 산</a>
+    <a href="#water">강이나 연못</a>
+    <a href="#desert">사막</a>
+    <a href="#special">특수환경</a>
+</nav>
+
+<section id="mountain">
+    <h1>들이나 산</h1>
+
+    <!-- 은행나무 -->
+    <div id="ginkgo" class="plant-card">
+        <h2>은행나무</h2>
+        <img src="images/ginkgo.jpg" alt="은행나무">
+        <p>크기: 20~35m | 수명: 약 1,000년<br>
+        특징: 부채 모양 잎, 가을에 노랗게 물듦, 공룡 시대부터 생존</p>
+        <div class="quiz">
+            <p>퀴즈 1: 은행나무 잎은 가을에 어떤 색?</p>
+            <p>① 파란색 ② 노란색 ③ 보라색</p>
+            <button onclick="toggleAnswer('a1')">정답 보기</button>
+            <div id="a1" class="answer">정답: ② 노란색</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 은행 열매가 냄새나는 이유는?</p>
+            <p>① 동물이 퍼뜨리게 하려고 ② 재미로 ③ 벌레를 부르려고</p>
+            <button onclick="toggleAnswer('a2')">정답 보기</button>
+            <div id="a2" class="answer">정답: ① 동물이 퍼뜨리게 하려고</div>
+        </div>
+    </div>
+
+    <!-- 철쭉 -->
+    <div id="azalea" class="plant-card">
+        <h2>철쭉</h2>
+        <img src="images/azalea.jpg" alt="철쭉">
+        <p>봄에 분홍색 꽃이 피며 산과 공원에서 흔히 볼 수 있음</p>
+        <div class="quiz">
+            <p>퀴즈 1: 철쭉은 언제 꽃이 필까요?</p>
+            <p>① 봄 ② 여름 ③ 겨울</p>
+            <button onclick="toggleAnswer('a3')">정답 보기</button>
+            <div id="a3" class="answer">정답: ① 봄</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 철쭉 꽃 색깔은?</p>
+            <p>① 빨강 ② 분홍 ③ 파랑</p>
+            <button onclick="toggleAnswer('a4')">정답 보기</button>
+            <div id="a4" class="answer">정답: ② 분홍</div>
+        </div>
+    </div>
+
+    <!-- 소나무 -->
+    <div id="pine" class="plant-card">
+        <h2>소나무</h2>
+        <img src="images/pine.jpg" alt="소나무">
+        <p>사계절 푸르고, 솔방울이 열매로 맺힘</p>
+        <div class="quiz">
+            <p>퀴즈 1: 소나무는 겨울에도 푸를까요?</p>
+            <p>① 네 ② 아니요</p>
+            <button onclick="toggleAnswer('a5')">정답 보기</button>
+            <div id="a5" class="answer">정답: ① 네</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 소나무 열매는?</p>
+            <p>① 솔방울 ② 밤 ③ 도토리</p>
+            <button onclick="toggleAnswer('a6')">정답 보기</button>
+            <div id="a6" class="answer">정답: ① 솔방울</div>
+        </div>
+    </div>
+
+    <!-- 나머지: 밤나무, 닭의장풀, 강아지풀, 무궁화, 도라지 동일 구조 -->
+</section>
+<!-- 🌊 강이나 연못 -->
+<section id="water">
+    <h1>강이나 연못</h1>
+
+    <!-- 연꽃 -->
+    <div id="lotus" class="plant-card">
+        <h2>연꽃</h2>
+        <img src="images/lotus.jpg" alt="연꽃">
+        <p>잎은 물 위에 뜨고 여름에 큰 꽃이 핌. 물방울이 잎 위에서 굴러감</p>
+        <div class="quiz">
+            <p>퀴즈 1: 연꽃 잎 위 물방울은?</p>
+            <p>① 스며든다 ② 굴러 떨어진다</p>
+            <button onclick="toggleAnswer('a7')">정답 보기</button>
+            <div id="a7" class="answer">정답: ② 굴러 떨어진다</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 연꽃은 어디서 살까요?</p>
+            <p>① 물속 ② 사막 ③ 숲속</p>
+            <button onclick="toggleAnswer('a8')">정답 보기</button>
+            <div id="a8" class="answer">정답: ① 물속</div>
+        </div>
+    </div>
+
+    <!-- 갈대 -->
+    <div id="reed" class="plant-card">
+        <h2>갈대</h2>
+        <img src="images/reed.jpg" alt="갈대">
+        <p>강가나 습지에 자라며 키가 크고 바람에 흔들림</p>
+        <div class="quiz">
+            <p>퀴즈 1: 갈대는 어디에서 살까요?</p>
+            <p>① 강가 ② 사막 ③ 산꼭대기</p>
+            <button onclick="toggleAnswer('a9')">정답 보기</button>
+            <div id="a9" class="answer">정답: ① 강가</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 갈대는 왜 키가 클까요?</p>
+            <p>① 햇빛 받으려고 ② 동물 피하려고</p>
+            <button onclick="toggleAnswer('a10')">정답 보기</button>
+            <div id="a10" class="answer">정답: ① 햇빛 받으려고</div>
+        </div>
+    </div>
+
+    <!-- 부레옥잠 -->
+    <div id="waterhyacinth" class="plant-card">
+        <h2>부레옥잠</h2>
+        <img src="images/waterhyacinth.jpg" alt="부레옥잠">
+        <p>물 위에 떠서 자라는 식물, 보라색 꽃이 핌</p>
+        <div class="quiz">
+            <p>퀴즈 1: 부레옥잠은 물에 뜰까요?</p>
+            <p>① 네 ② 아니요</p>
+            <button onclick="toggleAnswer('a11')">정답 보기</button>
+            <div id="a11" class="answer">정답: ① 네</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 부레옥잠 꽃 색은?</p>
+            <p>① 노랑 ② 보라 ③ 빨강</p>
+            <button onclick="toggleAnswer('a12')">정답 보기</button>
+            <div id="a12" class="answer">정답: ② 보라</div>
+        </div>
+    </div>
+
+    <!-- 검정말 -->
+    <div id="eelgrass" class="plant-card">
+        <h2>검정말</h2>
+        <img src="images/eelgrass.jpg" alt="검정말">
+        <p>물속에서 사는 식물, 잎이 길고 가늘다</p>
+        <div class="quiz">
+            <p>퀴즈 1: 검정말은 어디에서 살까요?</p>
+            <p>① 물속 ② 땅속 ③ 나무 위</p>
+            <button onclick="toggleAnswer('a13')">정답 보기</button>
+            <div id="a13" class="answer">정답: ① 물속</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 검정말의 잎은?</p>
+            <p>① 길고 얇다 ② 둥글고 넓다</p>
+            <button onclick="toggleAnswer('a14')">정답 보기</button>
+            <div id="a14" class="answer">정답: ① 길고 얇다</div>
+        </div>
+    </div>
+
+    <!-- 수련 -->
+    <div id="waterlily" class="plant-card">
+        <h2>수련</h2>
+        <img src="images/waterlily.jpg" alt="수련">
+        <p>잎이 둥글고 물 위에 뜨며 예쁜 꽃이 핌</p>
+        <div class="quiz">
+            <p>퀴즈 1: 수련은 어디서 볼까요?</p>
+            <p>① 강가 ② 연못</p>
+            <button onclick="toggleAnswer('a15')">정답 보기</button>
+            <div id="a15" class="answer">정답: ② 연못</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 잎 모양은?</p>
+            <p>① 네모 ② 동그라미</p>
+            <button onclick="toggleAnswer('a16')">정답 보기</button>
+            <div id="a16" class="answer">정답: ② 동그라미</div>
+        </div>
+    </div>
+
+    <!-- 창포 -->
+    <div id="iris" class="plant-card">
+        <h2>창포</h2>
+        <img src="images/iris.jpg" alt="창포">
+        <p>물가에서 자라고, 잎이 길고 날씬함. 단오 풍습과 관련</p>
+        <div class="quiz">
+            <p>퀴즈 1: 창포는 언제 유명할까요?</p>
+            <p>① 단오 ② 설날 ③ 추석</p>
+            <button onclick="toggleAnswer('a17')">정답 보기</button>
+            <div id="a17" class="answer">정답: ① 단오</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 창포는 물을 좋아할까요?</p>
+            <p>① 네 ② 아니요</p>
+            <button onclick="toggleAnswer('a18')">정답 보기</button>
+            <div id="a18" class="answer">정답: ① 네</div>
+        </div>
+    </div>
+</section>
+<!-- 🏜 사막 -->
+<section id="desert">
+    <h1>사막</h1>
+
+    <!-- 바오밥나무 -->
+    <div id="baobab" class="plant-card">
+        <h2>바오밥나무</h2>
+        <img src="images/baobab.jpg" alt="바오밥나무">
+        <p>몸통에 물을 저장하여 건조한 환경에서 살아남음. 수천 년 살 수 있음</p>
+        <div class="quiz">
+            <p>퀴즈 1: 바오밥나무 몸통이 큰 이유는?</p>
+            <p>① 물 저장 ② 멋있어서</p>
+            <button onclick="toggleAnswer('a19')">정답 보기</button>
+            <div id="a19" class="answer">정답: ① 물 저장</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 바오밥은 어디서 살까요?</p>
+            <p>① 사막 ② 바다</p>
+            <button onclick="toggleAnswer('a20')">정답 보기</button>
+            <div id="a20" class="answer">정답: ① 사막</div>
+        </div>
+    </div>
+
+    <!-- 선인장 -->
+    <div id="cactus" class="plant-card">
+        <h2>선인장</h2>
+        <img src="images/cactus.jpg" alt="선인장">
+        <p>가시가 잎을 대신하고 줄기에 물을 저장함</p>
+        <div class="quiz">
+            <p>퀴즈 1: 선인장은 왜 가시가 있을까요?</p>
+            <p>① 물 지키려고 ② 예쁘려고</p>
+            <button onclick="toggleAnswer('a21')">정답 보기</button>
+            <div id="a21" class="answer">정답: ① 물 지키려고</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 선인장은 어디서 잘 살까요?</p>
+            <p>① 사막 ② 숲속</p>
+            <button onclick="toggleAnswer('a22')">정답 보기</button>
+            <div id="a22" class="answer">정답: ① 사막</div>
+        </div>
+    </div>
+
+    <!-- 알로에 -->
+    <div id="aloe" class="plant-card">
+        <h2>알로에</h2>
+        <img src="images/aloe.jpg" alt="알로에">
+        <p>잎 속 젤은 피부에 좋으며 사막에서 잘 자람</p>
+        <div class="quiz">
+            <p>퀴즈 1: 알로에 젤은 어디에 좋아요?</p>
+            <p>① 피부 ② 발톱</p>
+            <button onclick="toggleAnswer('a23')">정답 보기</button>
+            <div id="a23" class="answer">정답: ① 피부</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 알로에는 사막 식물일까요?</p>
+            <p>① 네 ② 아니요</p>
+            <button onclick="toggleAnswer('a24')">정답 보기</button>
+            <div id="a24" class="answer">정답: ① 네</div>
+        </div>
+    </div>
+
+    <!-- 용설란 -->
+    <div id="agave" class="plant-card">
+        <h2>용설란</h2>
+        <img src="images/agave.jpg" alt="용설란">
+        <p>두꺼운 잎에 수분 저장, 섬유 생산에 이용</p>
+        <div class="quiz">
+            <p>퀴즈 1: 용설란은 어디서 살까요?</p>
+            <p>① 사막 ② 연못</p>
+            <button onclick="toggleAnswer('a25')">정답 보기</button>
+            <div id="a25" class="answer">정답: ① 사막</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 잎으로 무엇을 만들까요?</p>
+            <p>① 섬유 ② 고무</p>
+            <button onclick="toggleAnswer('a26')">정답 보기</button>
+            <div id="a26" class="answer">정답: ① 섬유</div>
+        </div>
+    </div>
+
+    <!-- 다육식물 -->
+    <div id="succulent" class="plant-card">
+        <h2>다육식물</h2>
+        <img src="images/succulent.jpg" alt="다육식물">
+        <p>잎이 두껍고 통통하여 물을 저장함</p>
+        <div class="quiz">
+            <p>퀴즈 1: 다육식물의 잎은?</p>
+            <p>① 두껍고 통통 ② 얇고 마름</p>
+            <button onclick="toggleAnswer('a27')">정답 보기</button>
+            <div id="a27" class="answer">정답: ① 두껍고 통통</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 다육식물은 어디서 잘 살까요?</p>
+            <p>① 건조한 곳 ② 물 많은 곳</p>
+            <button onclick="toggleAnswer('a28')">정답 보기</button>
+            <div id="a28" class="answer">정답: ① 건조한 곳</div>
+        </div>
+    </div>
+</section>
+
+<!-- 🌱 특수환경 -->
+<section id="special">
+    <h1>특수환경</h1>
+
+    <!-- 파리지옥 -->
+    <div id="venus-flytrap" class="plant-card">
+        <h2>파리지옥</h2>
+        <img src="images/venus-flytrap.jpg" alt="파리지옥">
+        <p>벌레를 잡아 영양분을 얻는 식충식물</p>
+        <div class="quiz">
+            <p>퀴즈 1: 파리지옥은 왜 벌레를 먹을까요?</p>
+            <p>① 재미로 ② 영양 얻으려고</p>
+            <button onclick="toggleAnswer('a29')">정답 보기</button>
+            <div id="a29" class="answer">정답: ② 영양 얻으려고</div>
+        </div>
+        <div class="quiz">
+            <p>퀴즈 2: 파리지옥은 어디에서 자랄까요?</p>
+            <p>① 습지 ② 사막</p>
+            <button onclick="toggleAnswer('a30')">정답 보기</button>
+            <div id="a30" class="answer">정답: ① 습지</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>부레옥잠</title>
+<style>
+body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
+.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
+img { width: 100%; border-radius: 10px; }
+button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
+.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+</style>
+<script>
+function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
+</script>
+</head>
+<body>
+<div class="card">
+<h1>부레옥잠</h1>
+<img src="images/waterhyacinth.jpg" alt="부레옥잠">
+<p>물 위에 떠서 자라는 식물, 보라색 꽃이 핌</p>
+<h3>퀴즈 1</h3>
+<p>부레옥잠은 물에 뜰까요?</p>
+<p>① 네 ② 아니요</p>
+<button onclick="toggleAnswer('a1')">정답 보기</button>
+<p id="a1" class="answer">정답: ① 네</p>
+<h3>퀴즈 2</h3>
+<p>부레옥잠 꽃 색은?</p>
+<p>① 노랑 ② 보라 ③ 빨강</p>
+<button onclick="toggleAnswer('a2')">정답 보기</button>
+<p id="a2" class="answer">정답: ② 보라</p>
+</div>
+</body>
+</html>

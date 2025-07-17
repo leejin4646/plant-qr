@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>은행나무</title>
+<style>
+body { font-family: Arial, sans-serif; text-align: center; margin: 0; background: #f8fff8; }
+.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
+img { width: 100%; border-radius: 10px; }
+button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
+.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+</style>
+<script>
+function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
+</script>
+</head>
+<body>
+<div class="card">
+<h1>은행나무</h1>
+<img src="images/ginkgo.jpg" alt="은행나무">
+<p>크기: 20~35m | 수명: 약 1,000년<br>특징: 부채 모양 잎, 가을에 노랗게 물듦</p>
+<h3>퀴즈 1</h3>
+<p>은행나무 잎은 가을에 어떤 색?</p>
+<p>① 파란색 ② 노란색 ③ 보라색</p>
+<button onclick="toggleAnswer('a1')">정답 보기</button>
+<p id="a1" class="answer">정답: ② 노란색</p>
+<h3>퀴즈 2</h3>
+<p>은행 열매가 냄새나는 이유는?</p>
+<p>① 동물이 퍼뜨리게 하려고 ② 재미로 ③ 벌레를 부르려고</p>
+<button onclick="toggleAnswer('a2')">정답 보기</button>
+<p id="a2" class="answer">정답: ① 동물이 퍼뜨리게 하려고</p>
+</div>
+</body>
+</html>

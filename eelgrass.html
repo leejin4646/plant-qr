@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>검정말</title>
+<style>
+body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
+.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
+img { width: 100%; border-radius: 10px; }
+button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
+.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+</style>
+<script>
+function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
+</script>
+</head>
+<body>
+<div class="card">
+<h1>검정말</h1>
+<img src="images/eelgrass.jpg" alt="검정말">
+<p>물속에서 사는 식물, 잎이 길고 가늘다</p>
+<h3>퀴즈 1</h3>
+<p>검정말은 어디에서 살까요?</p>
+<p>① 물속 ② 땅속 ③ 나무 위</p>
+<button onclick="toggleAnswer('a1')">정답 보기</button>
+<p id="a1" class="answer">정답: ① 물속</p>
+<h3>퀴즈 2</h3>
+<p>검정말의 잎은?</p>
+<p>① 길고 얇다 ② 둥글고 넓다</p>
+<button onclick="toggleAnswer('a2')">정답 보기</button>
+<p id="a2" class="answer">정답: ① 길고 얇다</p>
+</div>
+</body>
+</html>

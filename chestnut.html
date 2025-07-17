@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>밤나무</title>
+<style>
+body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
+.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
+img { width: 100%; border-radius: 10px; }
+button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
+.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+</style>
+<script>
+function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
+</script>
+</head>
+<body>
+<div class="card">
+<h1>밤나무</h1>
+<img src="images/chestnut.jpg" alt="밤나무">
+<p>가을에 밤이 열리고, 뾰족한 가시에 싸여 있음</p>
+<h3>퀴즈 1</h3>
+<p>밤은 어떤 계절에 열릴까요?</p>
+<p>① 봄 ② 여름 ③ 가을</p>
+<button onclick="toggleAnswer('a1')">정답 보기</button>
+<p id="a1" class="answer">정답: ③ 가을</p>
+<h3>퀴즈 2</h3>
+<p>밤나무 열매는 무엇일까요?</p>
+<p>① 도토리 ② 밤 ③ 솔방울</p>
+<button onclick="toggleAnswer('a2')">정답 보기</button>
+<p id="a2" class="answer">정답: ② 밤</p>
+</div>
+</body>
+</html>
