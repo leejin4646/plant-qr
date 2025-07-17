@@ -8,29 +8,30 @@
 body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
 .card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
 img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+h1 { color: #2E7D32; }
+p { font-size: 18px; }
+.quiz { text-align: left; margin-top: 15px; }
+.quiz h3 { color: #1565C0; }
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>수련</h1>
 <img src="images/waterlily.jpg" alt="수련">
-<p>잎이 둥글고 물 위에 뜨며 예쁜 꽃이 핌</p>
+<p>수련은 잎이 물 위에 넓게 퍼지고, 꽃은 낮에 피고 밤에 접힙니다.<br>
+다양한 색의 꽃이 있어 연못을 아름답게 장식합니다.<br>
+잎은 둥글고 가운데가 살짝 갈라져 있습니다.</p>
+
+<div class="quiz">
 <h3>퀴즈 1</h3>
-<p>수련은 어디서 볼까요?</p>
-<p>① 강가 ② 연못</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ② 연못</p>
+<p>수련의 잎은 어떤 모양일까요?</p>
+
 <h3>퀴즈 2</h3>
-<p>잎 모양은?</p>
-<p>① 네모 ② 동그라미</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ② 동그라미</p>
+<p>수련 꽃은 낮과 밤 중 언제 핀 상태로 있을까요?</p>
+</div>
 </div>
 </body>
 </html>
+
+
 

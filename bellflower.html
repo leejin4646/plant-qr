@@ -8,29 +8,31 @@
 body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
 .card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
 img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+h1 { color: #2E7D32; }
+p { font-size: 18px; }
+.quiz { text-align: left; margin-top: 15px; }
+.quiz h3 { color: #1565C0; }
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>도라지</h1>
 <img src="images/bellflower.jpg" alt="도라지">
-<p>보라색 종 모양 꽃, 뿌리는 약재로 사용</p>
+<p>도라지는 보라색 종 모양의 꽃을 피우는 식물입니다.<br>
+뿌리는 약재로 유명하며 목 건강에 좋습니다.<br>
+꽃이 예뻐 관상용으로도 많이 기릅니다.</p>
+
+<div class="quiz">
 <h3>퀴즈 1</h3>
-<p>도라지 꽃 모양은?</p>
-<p>① 종 모양 ② 별 모양 ③ 동그라미</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ① 종 모양</p>
+<p>도라지 꽃 모양은 어떤 모양인가요?</p>
+
 <h3>퀴즈 2</h3>
-<p>도라지 뿌리는 무엇에 쓰일까요?</p>
-<p>① 음식과 약재 ② 장난감 ③ 연료</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ① 음식과 약재</p>
+<p>도라지 뿌리는 무엇에 사용될까요?</p>
+</div>
 </div>
 </body>
 </html>
+
+
+
 

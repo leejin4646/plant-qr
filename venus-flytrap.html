@@ -5,32 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>파리지옥</title>
 <style>
-body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
-.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
-img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+body{text-align:center;font-family:Arial;background:#f8fff8;margin:0}
+.card{max-width:600px;margin:20px auto;background:#fff;padding:20px;border-radius:12px}
+img{width:100%;border-radius:10px}
+h1{color:#2E7D32}
+.quiz{text-align:left;margin-top:15px}
+.quiz h3{color:#1565C0}
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>파리지옥</h1>
 <img src="images/venus-flytrap.jpg" alt="파리지옥">
-<p>벌레를 잡아먹는 식충식물, 덫 같은 잎이 특징</p>
+<p>파리지옥은 곤충을 잡아먹는 식충식물입니다.<br>
+잎이 덫처럼 닫히며 먹이를 소화합니다.<br>
+늪지대에서 자라며 영양분을 보충하기 위해 곤충을 먹습니다.</p>
+<div class="quiz">
 <h3>퀴즈 1</h3>
 <p>파리지옥은 무엇을 먹나요?</p>
-<p>① 곤충 ② 풀</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ① 곤충</p>
 <h3>퀴즈 2</h3>
-<p>잎은 어떤 기능을 하나요?</p>
-<p>① 덫 ② 꽃</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ① 덫</p>
+<p>파리지옥은 어떤 지역에서 자랄까요?</p>
+</div>
 </div>
 </body>
 </html>
-

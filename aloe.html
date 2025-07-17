@@ -5,33 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>알로에</title>
 <style>
-body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
-.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
-img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+body{text-align:center;font-family:Arial;background:#f8fff8;margin:0}
+.card{max-width:600px;margin:20px auto;background:#fff;padding:20px;border-radius:12px}
+img{width:100%;border-radius:10px}
+h1{color:#2E7D32}
+.quiz{text-align:left;margin-top:15px}
+.quiz h3{color:#1565C0}
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>알로에</h1>
 <img src="images/aloe.jpg" alt="알로에">
-<p>잎 속 젤은 피부에 좋으며 건조한 곳에서 자람</p>
+<p>알로에는 다육식물로 잎 속 젤이 피부에 좋아 약용으로 쓰입니다.<br>
+건조한 환경에서 잘 자라며 물을 많이 저장합니다.<br>
+예전에는 화상 치료에도 사용되었습니다.</p>
+<div class="quiz">
 <h3>퀴즈 1</h3>
-<p>알로에 젤은 어디에 좋아요?</p>
-<p>① 피부 ② 발톱</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ① 피부</p>
+<p>알로에의 젤은 무엇에 좋을까요?</p>
 <h3>퀴즈 2</h3>
-<p>알로에는 사막 식물일까요?</p>
-<p>① 네 ② 아니요</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ① 네</p>
+<p>알로에는 어떤 환경에서 잘 자랄까요?</p>
+</div>
 </div>
 </body>
 </html>
+
+
 
 

@@ -8,28 +8,27 @@
 body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
 .card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
 img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+h1 { color: #2E7D32; }
+p { font-size: 18px; }
+.quiz { text-align: left; margin-top: 15px; }
+.quiz h3 { color: #1565C0; }
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>철쭉</h1>
 <img src="images/azalea.jpg" alt="철쭉">
-<p>봄에 분홍색 꽃이 피며 산과 공원에서 흔히 볼 수 있음</p>
+<p>철쭉은 봄에 분홍빛 꽃을 피우며 산과 공원에서 흔히 볼 수 있습니다.<br>
+화려한 색감으로 봄철 꽃축제의 주인공이며 꿀도 풍부해 곤충들이 좋아합니다.<br>
+하지만 꽃에는 독성이 있어 먹으면 안 됩니다.</p>
+
+<div class="quiz">
 <h3>퀴즈 1</h3>
-<p>철쭉은 언제 꽃이 필까요?</p>
-<p>① 봄 ② 여름 ③ 겨울</p>
-<button onclick="toggleAnswer('a3')">정답 보기</button>
-<p id="a3" class="answer">정답: ① 봄</p>
+<p>철쭉은 주로 어떤 계절에 피나요?</p>
+
 <h3>퀴즈 2</h3>
-<p>철쭉 꽃 색깔은?</p>
-<p>① 빨강 ② 분홍 ③ 파랑</p>
-<button onclick="toggleAnswer('a4')">정답 보기</button>
-<p id="a4" class="answer">정답: ② 분홍</p>
+<p>철쭉 꽃에는 독이 있을까요? 먹어도 될까요?</p>
+</div>
 </div>
 </body>
 </html>

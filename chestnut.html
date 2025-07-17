@@ -8,28 +8,29 @@
 body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
 .card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
 img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+h1 { color: #2E7D32; }
+p { font-size: 18px; }
+.quiz { text-align: left; margin-top: 15px; }
+.quiz h3 { color: #1565C0; }
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>밤나무</h1>
 <img src="images/chestnut.jpg" alt="밤나무">
-<p>가을에 밤이 열리고, 뾰족한 가시에 싸여 있음</p>
+<p>밤나무는 가을에 밤을 맺으며 열매는 가시에 싸여 있습니다.<br>
+밤은 예로부터 중요한 먹거리였고, 비타민이 풍부해 영양가가 높습니다.<br>
+밤나무는 주로 산지에서 잘 자랍니다.</p>
+
+<div class="quiz">
 <h3>퀴즈 1</h3>
-<p>밤은 어떤 계절에 열릴까요?</p>
-<p>① 봄 ② 여름 ③ 가을</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ③ 가을</p>
+<p>밤나무 열매는 어떤 계절에 열릴까요?</p>
+
 <h3>퀴즈 2</h3>
-<p>밤나무 열매는 무엇일까요?</p>
-<p>① 도토리 ② 밤 ③ 솔방울</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ② 밤</p>
+<p>밤은 어떤 껍질 속에 싸여 있을까요?</p>
+</div>
 </div>
 </body>
 </html>
+
+

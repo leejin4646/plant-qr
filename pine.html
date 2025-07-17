@@ -5,33 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>소나무</title>
 <style>
-body { font-family: Arial, sans-serif; text-align: center; margin: 0; background: #f8fff8; }
+body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
 .card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
 img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+h1 { color: #2E7D32; }
+p { font-size: 18px; }
+.quiz { text-align: left; margin-top: 15px; }
+.quiz h3 { color: #1565C0; }
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>소나무</h1>
 <img src="images/pine.jpg" alt="소나무">
-<p>사계절 푸르고, 솔방울이 열매로 맺히는 대표적인 침엽수</p>
+<p>소나무는 사계절 푸른 잎을 가진 대표적인 침엽수입니다.<br>
+솔방울을 맺으며 한국의 상징적인 나무로 오래 사랑받았습니다.<br>
+뿌리가 깊고 강한 바람에도 잘 견딥니다.</p>
 
+<div class="quiz">
 <h3>퀴즈 1</h3>
-<p>소나무는 겨울에도 푸를까요?</p>
-<p>① 네 ② 아니요</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ① 네</p>
+<p>소나무는 사계절 내내 어떤 색으로 유지되나요?</p>
 
 <h3>퀴즈 2</h3>
 <p>소나무 열매는 무엇일까요?</p>
-<p>① 솔방울 ② 밤 ③ 도토리</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ① 솔방울</p>
+</div>
 </div>
 </body>
 </html>
+

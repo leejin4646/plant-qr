@@ -8,28 +8,30 @@
 body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
 .card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
 img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+h1 { color: #2E7D32; }
+p { font-size: 18px; }
+.quiz { text-align: left; margin-top: 15px; }
+.quiz h3 { color: #1565C0; }
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>창포</h1>
 <img src="images/iris.jpg" alt="창포">
-<p>물가에서 자라는 보라색 꽃, 향기가 좋음</p>
+<p>창포는 물가에서 자라는 보라색 꽃을 가진 식물입니다.<br>
+단오 때 창포물에 머리를 감으면 건강해진다고 믿었습니다.<br>
+향기가 좋고 꽃 모양이 아름답습니다.</p>
+
+<div class="quiz">
 <h3>퀴즈 1</h3>
-<p>창포는 어디에서 자랄까요?</p>
-<p>① 물가 ② 사막</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ① 물가</p>
+<p>창포는 주로 어디에서 자라나요?</p>
+
 <h3>퀴즈 2</h3>
-<p>창포 꽃 색깔은?</p>
-<p>① 보라 ② 노랑</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ① 보라</p>
+<p>옛날 사람들은 창포물로 무엇을 했을까요?</p>
+</div>
 </div>
 </body>
 </html>
+
+
+

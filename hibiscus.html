@@ -8,28 +8,30 @@
 body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
 .card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
 img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+h1 { color: #2E7D32; }
+p { font-size: 18px; }
+.quiz { text-align: left; margin-top: 15px; }
+.quiz h3 { color: #1565C0; }
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>무궁화</h1>
 <img src="images/hibiscus.jpg" alt="무궁화">
-<p>한국의 국화, 여름에 보라·분홍 꽃이 핌</p>
+<p>무궁화는 한국의 나라꽃으로 여름부터 가을까지 오래 피어납니다.<br>
+보라빛과 분홍빛이 섞인 아름다운 꽃잎이 특징입니다.<br>
+튼튼하고 생명력이 강한 나무입니다.</p>
+
+<div class="quiz">
 <h3>퀴즈 1</h3>
 <p>무궁화는 어떤 나라의 나라꽃일까요?</p>
-<p>① 한국 ② 일본 ③ 중국</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ① 한국</p>
+
 <h3>퀴즈 2</h3>
-<p>무궁화는 언제 핌?</p>
-<p>① 봄 ② 여름 ③ 겨울</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ② 여름</p>
+<p>무궁화는 보통 어떤 계절에 가장 많이 필까요?</p>
+</div>
 </div>
 </body>
 </html>
+
+
+

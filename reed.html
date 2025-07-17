@@ -8,29 +8,30 @@
 body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
 .card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
 img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+h1 { color: #2E7D32; }
+p { font-size: 18px; }
+.quiz { text-align: left; margin-top: 15px; }
+.quiz h3 { color: #1565C0; }
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>갈대</h1>
 <img src="images/reed.jpg" alt="갈대">
-<p>강가나 습지에 자라며 키가 크고 바람에 흔들림</p>
+<p>갈대는 강가나 습지에서 키가 크게 자라는 식물입니다.<br>
+바람이 불면 흔들리는 모습이 아름답고, 새들의 보금자리 역할도 합니다.<br>
+줄기는 예로부터 생활 도구나 지붕 재료로 쓰였습니다.</p>
+
+<div class="quiz">
 <h3>퀴즈 1</h3>
-<p>갈대는 어디에서 살까요?</p>
-<p>① 강가 ② 사막 ③ 산꼭대기</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ① 강가</p>
+<p>갈대는 주로 어디에서 살까요?</p>
+
 <h3>퀴즈 2</h3>
-<p>갈대는 왜 키가 클까요?</p>
-<p>① 햇빛 받으려고 ② 동물 피하려고</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ① 햇빛 받으려고</p>
+<p>갈대 줄기는 예전에는 무엇에 사용했을까요?</p>
+</div>
 </div>
 </body>
 </html>
+
+
 

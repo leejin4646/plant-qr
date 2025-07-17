@@ -8,28 +8,30 @@
 body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
 .card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
 img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+h1 { color: #2E7D32; }
+p { font-size: 18px; }
+.quiz { text-align: left; margin-top: 15px; }
+.quiz h3 { color: #1565C0; }
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>검정말</h1>
 <img src="images/eelgrass.jpg" alt="검정말">
-<p>물속에서 사는 식물, 잎이 길고 가늘다</p>
+<p>검정말은 물속에서 사는 식물로, 길고 가느다란 줄기를 가졌습니다.<br>
+물속에서 광합성을 하여 물고기에게 산소를 제공합니다.<br>
+관상용으로 수족관에서도 많이 기릅니다.</p>
+
+<div class="quiz">
 <h3>퀴즈 1</h3>
 <p>검정말은 어디에서 살까요?</p>
-<p>① 물속 ② 땅속 ③ 나무 위</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ① 물속</p>
+
 <h3>퀴즈 2</h3>
-<p>검정말의 잎은?</p>
-<p>① 길고 얇다 ② 둥글고 넓다</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ① 길고 얇다</p>
+<p>검정말은 물속에서 무엇을 만들어 줄까요?</p>
+</div>
 </div>
 </body>
 </html>
+
+
+

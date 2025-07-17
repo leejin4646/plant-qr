@@ -5,32 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>다육식물</title>
 <style>
-body { font-family: Arial; text-align: center; background: #f8fff8; margin: 0; }
-.card { max-width: 600px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 12px; }
-img { width: 100%; border-radius: 10px; }
-button { background: #4CAF50; color: #fff; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
-.answer { display: none; color: #E65100; margin-top: 5px; font-weight: bold; }
+body{text-align:center;font-family:Arial;background:#f8fff8;margin:0}
+.card{max-width:600px;margin:20px auto;background:#fff;padding:20px;border-radius:12px}
+img{width:100%;border-radius:10px}
+h1{color:#2E7D32}
+.quiz{text-align:left;margin-top:15px}
+.quiz h3{color:#1565C0}
 </style>
-<script>
-function toggleAnswer(id){ var a=document.getElementById(id); a.style.display=(a.style.display==="none")?"block":"none"; }
-</script>
 </head>
 <body>
 <div class="card">
 <h1>다육식물</h1>
 <img src="images/succulent.jpg" alt="다육식물">
-<p>잎에 물을 저장하는 식물, 다양한 모양이 있음</p>
+<p>다육식물은 잎에 물을 저장하는 식물입니다.<br>
+다양한 모양과 색으로 실내 장식용으로 인기가 많습니다.<br>
+물이 부족한 환경에서도 오래 살 수 있습니다.</p>
+<div class="quiz">
 <h3>퀴즈 1</h3>
 <p>다육식물은 물을 어디에 저장할까요?</p>
-<p>① 줄기 ② 잎</p>
-<button onclick="toggleAnswer('a1')">정답 보기</button>
-<p id="a1" class="answer">정답: ② 잎</p>
 <h3>퀴즈 2</h3>
-<p>다육식물은 물을 자주 줘야 할까요?</p>
-<p>① 네 ② 아니요</p>
-<button onclick="toggleAnswer('a2')">정답 보기</button>
-<p id="a2" class="answer">정답: ② 아니요</p>
+<p>다육식물은 어떤 이유로 인기가 많을까요?</p>
+</div>
 </div>
 </body>
 </html>
+
+
+
+
 
